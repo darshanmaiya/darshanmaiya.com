@@ -1,0 +1,169 @@
+body {
+	position: relative;
+	font-family: 'Raleway', sans-serif;
+	background-color: black;
+	color: white;
+}
+
+#main-content-container {
+	padding: 0 25px;
+	padding-top: 50px; /* Offset for fixed navbar */
+	border: 1px solid #333;
+	margin-bottom: 10px;
+}
+
+#main-content-container .bluebar {
+	border: 3px solid skyblue;
+	margin: 0px -26px;
+	position: fixed;
+	left: auto;
+	width: inherit;
+	z-index: 1;
+}
+
+#main-content > .resume-part {
+	padding-top: 40px;
+	padding-bottom: 20px;
+	border-top: 1px solid skyblue;
+}
+
+#main-content .resume-part .resume-part-details {
+	padding-top: 10px;
+}
+
+#main-content .resume-part .resume-part-section {
+	padding: 10px;
+	border-top: 1px solid gray;
+	margin-bottom: 10px;
+}
+
+#main-content .resume-part .resume-part-section:first-child {
+	padding-top: 0;
+	border-top: 0;
+}
+
+#header {
+	padding: 20px;
+}
+
+#header .main-header-section .photo {
+	border: 1px solid #CCC;
+	padding: 5px;
+	float: left;
+	display: block;
+	margin-right: 20px;
+	width: 150px;
+	height: 150px;
+	background: url('../graphics/photo.jpg') center center no-repeat;
+	background-position: 4px 4px;
+}
+
+#header .main-header-section .name {
+	padding-top: 25px;
+	font-size: 50px;
+	font-weight: 300;
+}
+
+#header .main-header-section .title {
+	font-size: 25px;
+}
+
+#header .main-header-section .social-section {
+	padding-top: 10px;
+	text-align: right;
+}
+
+#header .main-header-section .icon-container {
+	display: inline-block;
+	width: 58px;
+	height: 58px;
+	padding: 5px;
+	transition: 0.5s;
+	margin: 5px;
+}
+
+#header .main-header-section .icon-linkedin {
+	background: white url('../graphics/linkedin.png') center center no-repeat;
+	background-size: 48px 48px;
+}
+
+#header .main-header-section .icon-linkedin:hover {
+	background-color: #0085AF;
+}
+
+#header .main-header-section .icon-google-plus {
+	background: white url('../graphics/google-plus.png') center center no-repeat;
+	background-size: 48px 48px;
+}
+
+#header .main-header-section .icon-google-plus:hover {
+	background-color: #D74536;
+}
+
+#header .main-header-section .icon-mail {
+	background: white url('../graphics/contact.png') center center no-repeat;
+	background-size: 48px 48px;
+}
+
+#header .main-header-section .icon-mail:hover {
+	background-color: #FFBC00;
+}
+
+#header .main-header-section .icon-download {
+	background: white url('../graphics/download.png') center center no-repeat;
+	background-size: 48px 48px;
+}
+
+#header .main-header-section .icon-download:hover {
+	background-color: #7AE2FF;
+}
+
+#footer {
+	text-align: center;
+	padding: 3px;
+	background-color: skyblue;
+	color: black;
+	margin: 5px -25px -5px;
+	font-weight: bold;
+}
+
+#attributions-modal {
+	color: black;
+}
+
+@media (max-width: 768px) {
+	
+	#header {
+		text-align: center;
+		padding: 5px;
+		padding-top: 15px;
+	}
+	
+	#header .main-header-section .name {
+		padding-top: 20px;
+		font-size: 40px;
+	}
+	
+	#header .main-header-section .title {
+		font-size: 20px;
+	}
+	
+	#header .main-header-section .photo {
+		float: none;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	#header .main-header-section .social-section {
+		padding-top: 20px;
+		text-align: center;
+	}
+	
+	#main-content > .resume-part {
+		padding-top: 30px;
+	}
+	
+	#main-content > .resume-part h2 {
+		text-align: center;
+	}
+}
